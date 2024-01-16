@@ -28,7 +28,7 @@ const SuggestionBox = ({
   }, [searchUser, selectedUser]);
 
   return activeInput ? (
-    <div className="absolute top-12 left-0 shadow-xl rounded z-20 bg-white w-full max-h-72 overflow-y-scroll transition-all duration-500 ease-in-out">
+    <div className="absolute top-12 left-0 shadow-xl rounded z-20 bg-white w-full max-h-72 overflow-y-scroll transition-all duration-500 ease-in-out scrollCustom">
       {suggestions?.map((user) => (
         <div
           key={user.id}
